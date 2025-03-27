@@ -53,6 +53,7 @@
 46.Single Blog version 7 CSS
 47.Single Blog version 8 CSS
 48.Single Blog version 2 CSS
+49.blog cursor CSS home page
 ------------------------------------------------------------------ */
 /*-----------------------[ 1.Default CSS ]------------------------*/
 * {
@@ -5052,4 +5053,18 @@ p.blog8-heding a {
     color: #FFF;
     font-size: 16px;
     border-bottom: 1px solid #FFF;
+}
+/*-----------------------[ 49.blog cursor CSS home page ]------------------------*/
+.iframe-container {
+    position: relative;
+}
+
+.iframe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none; /* ✅ Allows clicks and scrolling */
 }
