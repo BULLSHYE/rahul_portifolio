@@ -1,321 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Freelancer</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'myapp/assets/images/favicon.svg' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/swap.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/fancybox.min.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/magnific-popup.min.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/aos.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/slick.min.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/assets/css/media_query.css' %}">
-</head>
-<body>
-    <div class="site_contain">
-        <!-- ====================================== Cusrsor ===================================== -->
-        <div class="cursor"></div>
-        <!-- ====================================== Cursor End ===================================== -->
-        <!-- ====================================== Preloader ===================================== -->
-        <div class="page-loader">
-            <div class="loader"></div>
-            <div class="shadow"></div>
-        </div>
-        <!-- ====================================== Preloader End ===================================== -->
-        <!-- ====================================== Main Menu ===================================== -->
-        <header id="top-navbar" class="top-navbar">
-            <div class="container">
-                <div class="top-navbar_full">
-                    <div class="back-btn">
-                        <a href="/">
-                            <img src="{% static 'myapp/assets/images/logo_svg.svg' %}" alt="logo">
-                        </a>
-                    </div>
-                    <div class="hell">
-                        <ul class="top-navbar-title">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/####">Services</a></li>
-                            <li><a href="/####">Portfolio</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li class="menu-active"><a href="/contact">Contact</a></li>
-                        </ul>
-                        <a href="{% static 'myapp/assets/pdf/Rahu_Resume_AI.pdf' %}">
-                            <div class="cv-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_25_74)">
-                                        <path d="M12 3V15" stroke="#0F141C" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M16 11L12 15L8 11" stroke="#0F141C" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21C14.3869 21 16.6761 20.0518 18.364 18.364C20.0518 16.6761 21 14.3869 21 12"
-                                            stroke="#0F141C" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </g>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="outer-menu">
-                            <input class="checkbox-toggle" type="checkbox" name="checkbox">
-                            <div class="hamburger">
-                                <div></div>
-                            </div>
-                            <!-- ====================================== Side Menu ===================================== -->
-                            <div class="menu">
-                                <div>
-                                    <nav>
-                                        <div class="container">
-                                            <div class="row sidemenu-main">
-                                                <div class="col-lg-2">
-                                                    <div class="menu-text">
-                                                        <div class="side-menu-text">
-                                                            <p>MENU</p>
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Freelancer</title>
+        <link rel="icon" type="image/x-icon"
+            href="{% static 'myapp/assets/images/favicon.svg' %}">
+        <link rel="stylesheet" href="{% static 'myapp/assets/css/swap.css' %}">
+        <link rel="stylesheet"
+            href="{% static 'myapp/assets/css/fancybox.min.css' %}">
+        <link rel="stylesheet"
+            href="{% static 'myapp/assets/css/magnific-popup.min.css' %}">
+        <link rel="stylesheet" href="{% static 'myapp/assets/css/aos.css' %}">
+        <link rel="stylesheet"
+            href="{% static 'myapp/assets/css/slick.min.css' %}">
+        <link rel="stylesheet"
+            href="{% static 'myapp/assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'myapp/assets/css/style.css' %}">
+        <link rel="stylesheet"
+            href="{% static 'myapp/assets/css/media_query.css' %}">
+    </head>
+    <body>
+        <div class="site_contain">
+            <!-- ====================================== Cusrsor ===================================== -->
+            <div class="cursor"></div>
+            <!-- ====================================== Cursor End ===================================== -->
+            <!-- ====================================== Preloader ===================================== -->
+            <div class="page-loader">
+                <div class="loader"></div>
+                <div class="shadow"></div>
+            </div>
+            <!-- ====================================== Preloader End ===================================== -->
+            <!-- ====================================== Main Menu ===================================== -->
+            <header id="top-navbar" class="top-navbar">
+                <div class="container">
+                    <div class="top-navbar_full">
+                        <div class="back-btn">
+                            <a href="/">
+                                <img
+                                    src="{% static 'myapp/assets/images/logo_svg.svg' %}"
+                                    alt="logo">
+                            </a>
+                        </div>
+                        <div class="hell">
+                            <ul class="top-navbar-title">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/####">Services</a></li>
+                                <li><a href="/####">Portfolio</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li class="menu-active"><a
+                                        href="/contact">Contact</a></li>
+                            </ul>
+                            <a
+                                href="{% static 'myapp/assets/pdf/Rahul_Python_ECE_AIML resume.pdf' %}">
+                                <div class="cv-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_25_74)">
+                                            <path d="M12 3V15" stroke="#0F141C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16 11L12 15L8 11"
+                                                stroke="#0F141C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21C14.3869 21 16.6761 20.0518 18.364 18.364C20.0518 16.6761 21 14.3869 21 12"
+                                                stroke="#0F141C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="outer-menu">
+                                <input class="checkbox-toggle" type="checkbox"
+                                    name="checkbox">
+                                <div class="hamburger">
+                                    <div></div>
+                                </div>
+                                <!-- ====================================== Side Menu ===================================== -->
+                                <div class="menu">
+                                    <div>
+                                        <nav>
+                                            <div class="container">
+                                                <div class="row sidemenu-main">
+                                                    <div class="col-lg-2">
+                                                        <div class="menu-text">
+                                                            <div
+                                                                class="side-menu-text">
+                                                                <p>MENU</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-7 side-menu-scroll">
-                                                    <div class="heading2"><a href="/">Home</a></div>
-                                                    <div class="heading2"><a href="/about">About</a></div>
-                                                    <div class="accordion">
-                                                        <div class="heading2 cursor-arrow">
-                                                            <a href="/####">
-                                                            Portfolio
-                                                        </a></div>
-                                                        <div class="heading2">
-                                                            <a href="">
-                                                                Single Portfolio
-                                                            </a></div>
-                                                        <div class="heading2">
-                                                            <a href="">
-                                                                Services
-                                                            </a></div>
-                            
-                                                        <div class="heading2">
-                                                            <a href="">
-                                                                Single Services
-                                                            </a></div>
-                                                        <div class="heading2 cursor-arrow">
-                                                            <a href="">
-                                                            Blog
-                                                        </a></div>
-                                                        <div class="heading2">
-                                                            <a href="">
-                                                                Single Blog
-                                                            </a></div>
-                                                    </div>
-                                                    <div class="heading2"><a href="/contact">Contact</a></div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="cont-info">
-                                                        <div class="item">
-                                                            <p class="sub-title-address">Address</p>
-                                                            <p class="geek-alto">Surat.<br>Gujarat, India</p>
+                                                    <div
+                                                        class="col-lg-7 side-menu-scroll">
+                                                        <div class="heading2"><a
+                                                                href="/">Home</a></div>
+                                                        <div class="heading2"><a
+                                                                href="/about">About</a></div>
+                                                        <div class="accordion">
+                                                            <div
+                                                                class="heading2 cursor-arrow">
+                                                                <a href="/####">
+                                                                    Portfolio
+                                                                </a></div>
+                                                            <div
+                                                                class="heading2">
+                                                                <a href>
+                                                                    Single
+                                                                    Portfolio
+                                                                </a></div>
+                                                            <div
+                                                                class="heading2">
+                                                                <a href>
+                                                                    Services
+                                                                </a></div>
+
+                                                            <div
+                                                                class="heading2">
+                                                                <a href>
+                                                                    Single
+                                                                    Services
+                                                                </a></div>
+                                                            <div
+                                                                class="heading2 cursor-arrow">
+                                                                <a href>
+                                                                    Blog
+                                                                </a></div>
+                                                            <div
+                                                                class="heading2">
+                                                                <a href>
+                                                                    Single Blog
+                                                                </a></div>
                                                         </div>
-                                                        <div class="item">
-                                                            <p class="sub-title-address">Contact Us</p>
-                                                            <p><a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a></p>
-                                                            <p class="underline">
-                                                                <a href="tel:+918849095957">+91 8849095957</a>
-                                                            </p>
+                                                        <div class="heading2"><a
+                                                                href="/contact">Contact</a></div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="cont-info">
+                                                            <div class="item">
+                                                                <p
+                                                                    class="sub-title-address">Address</p>
+                                                                <p
+                                                                    class="geek-alto">Surat.<br>Gujarat,
+                                                                    India</p>
+                                                            </div>
+                                                            <div class="item">
+                                                                <p
+                                                                    class="sub-title-address">Contact
+                                                                    Us</p>
+                                                                <p><a
+                                                                        href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a></p>
+                                                                <p
+                                                                    class="underline">
+                                                                    <a
+                                                                        href="tel:+918849095957">+91
+                                                                        8849095957</a>
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </nav>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- ====================================== Side Menu End===================================== -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- ====================================== Main Menu End ===================================== -->
-        <!-- ====================================== Conatct Section One ===================================== -->
-        <section class="section-main contact-section-main overflow-hidden" id="section-main-id">
-            <div class="container">
-                <p class="main-text my-services" data-aos="fade-down">CONTACT ME</p>
-                <h1 class="ui-ux" data-aos="fade-down">Let's make something awesome together!</h1>
-            </div>
-        </section>
-        <!-- ====================================== Conatct Section One End===================================== -->
-        <!-- ====================================== Conatct Section two ===================================== -->
-        <section class="section-two-my-services">
-            <div class="container" id="form-conatiner">
-                <div class="row" id="form">
-                    <div class="col-xxl-8 col-xl-8 col-lg-8 ">
-                        <form class="form-main">
-                            <div class="form-main-sub">
-                                <div class="input-main-form">
-                                    <p class="name">Name:</p>
-                                    <input type="text" name="name" placeholder="Your name" autocomplete="off">
-                                </div>
-                                <div class="input-main-form">
-                                    <p class="name">Email:</p>
-                                    <input type="email" name="name" placeholder="Your email" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="form-main-sub">
-                                <div class="input-main-form">
-                                    <p class="name">Phone (optional):</p>
-                                    <input type="text" name="name" placeholder="Your phone" autocomplete="off">
-                                </div>
-                                <div class="input-main-form">
-                                    <p class="name">Subject:</p>
-                                    <input type="text" name="name" placeholder="Your subject" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="input-main-form">
-                                <p class="name">Message:</p>
-                                <textarea placeholder="Type your message..."></textarea>
-                            </div>
-                            <div class="form-submit-btn-main">
-                                <button class="explore-btn hover-slide-right form-submit-btn">
-                                    <span id="toggle">SUBMIT
-                                        <svg class="expo-arrow2" xmlns="http://www.w3.org/2000/svg" width="32"
-                                            height="32" viewBox="0 0 32 32" fill="none">
-                                            <g>
-                                                <path d="M6.66669 16H25.3334" stroke="#FFDB59" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M20 21.3333L25.3333 16" stroke="#FFDB59" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M20 10.6666L25.3333 16" stroke="#FFDB59" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 overflow-hidden">
-                        <div class="get-touch-box-main">
-                            <h2>Get In Touch</h2>
-                            <p class="well">When do they work well, and when do they on us and finally, when do we
-                                actually need how can we avoid them.</p>
-                            <div class="contact-footer contact-footer2">
-                                <img src="{% static 'myapp/assets/images/phone_svg.svg' %}" alt="phone_svg">
-                                <a href="tel:+91 8849095957"> +91 8849095957</a>
-                            </div>
-                            <div class="contact-footer contact-footer2">
-                                <img src="{% static 'myapp/assets/images/email_svg.svg' %}" alt="email_svg">
-                                <a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
-                            </div>
-                            <div class="contact-footer contact-footer2">
-                                <img src="{% static 'myapp/assets/images/location_svg.svg' %}" alt="location_svg">
-                                <p>Gujarat, India</p>
+                                <!-- ====================================== Side Menu End===================================== -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- ====================================== Conatct Section Two End===================================== -->
-        <div class="header_full_sec about_header_full_sec">
-            <div class="position-relative">
-                <img class="client-bounce-img client-bounce-img1" src="{% static 'myapp/assets/images/client-photo-1.jpg' %}"
-                    alt="client-bounce-img1">
-                <img class="client-bounce-img client-bounce-img2" src="{% static 'myapp/assets/images/client-photo-3.jpg' %}"
-                    alt="client-bounce-img2">
-                <img class="client-bounce-img client-bounce-img3" src="{% static 'myapp/assets/images/client-photo-2.jpg' %}"
-                    alt="client-bounce-img3">
-                <img class="client-bounce-img client-bounce-img4" src="{% static 'myapp/assets/images/client-photo-4.jpg' %}"
-                    alt="client-bounce-img4">
-                <div class="logos">
-                    <div class="logos-slide">
-                        <div class="ticker__item">
-                            <a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
-                        </div>
-                        <div class="ticker__item ticker__item_dark">
-                            <a href="tel:+91 8849095957">+91 8849095957</a>
-                        </div>
-                        <div class="ticker__item">
-                            <a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
-                        </div>
-                        <div class="ticker__item ticker__item_dark">
-                            <a href="tel:+91 8849095957">+91 8849095957</a>
-                        </div>
-                        <div class="ticker__item">
-                            <a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
-                        </div>
-                        <div class="ticker__item ticker__item_dark">
-                            <a href="tel:+91 8849095957">+91 8849095957</a>
-                        </div>
-                    </div>
+            </header>
+            <!-- ====================================== Main Menu End ===================================== -->
+            <!-- ====================================== Conatct Section One ===================================== -->
+            <section class="section-main contact-section-main overflow-hidden"
+                id="section-main-id">
+                <div class="container">
+                    <p class="main-text my-services"
+                        data-aos="fade-down">CONTACT ME</p>
+                    <h1 class="ui-ux" data-aos="fade-down">Let's make something
+                        awesome together!</h1>
                 </div>
-            </div>
-        </div>
-        <!-- ====================================== Footer ===================================== -->
-        <footer>
-            <div class="mobile-itemright-footer" data-aos="fade-down">
-                <div class="footer-box-right">
-                    <p class="mind-project">Have a project in your mind?</p>
-                    <div class="view-work-circle btn btn1">
-                        <a href="/contact" class="a1">CONTACT ME</a>
-                    </div>
-                    <div>
-                        <p class="contact_time">09 : 00 AM - 10 : 30 PM</p>
-                        <p class="monday">Monday to Saturday</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bg">
-                <div class="container footer-containe">
-                    <div class="hekl">
-                        <div class="row">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5">
-                                <a href="index.html"><img src="{% static 'myapp/assets/images/logo_svg.svg' %}" alt="logo"></a>
-                                <p class="work_well">When do they work well, and when do they on us and finally,
-                                    when do we actually need how can we avoid them.</p>
-                                <div class="contact-footer">
-                                    <img src="{% static 'myapp/assets/images/phone_svg.svg' %}" alt="phone_svg">
-                                    <a href="tel:+91 8849095957">+91 8849095957</a>
+            </section>
+            <!-- ====================================== Conatct Section One End===================================== -->
+            <!-- ====================================== Conatct Section two ===================================== -->
+            <section class="section-two-my-services">
+                <div class="container" id="form-conatiner">
+                    <div class="row" id="form">
+                        <div class="col-xxl-8 col-xl-8 col-lg-8 ">
+                            <form class="form-main">
+                                <div class="form-main-sub">
+                                    <div class="input-main-form">
+                                        <p class="name">Name:</p>
+                                        <input type="text" name="name"
+                                            placeholder="Your name"
+                                            autocomplete="off">
+                                    </div>
+                                    <div class="input-main-form">
+                                        <p class="name">Email:</p>
+                                        <input type="email" name="name"
+                                            placeholder="Your email"
+                                            autocomplete="off">
+                                    </div>
                                 </div>
-                                <div class="contact-footer">
-                                    <img src="{% static 'myapp/assets/images/email_svg.svg' %}" alt="email_svg">
-                                    <a href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
+                                <div class="form-main-sub">
+                                    <div class="input-main-form">
+                                        <p class="name">Phone (optional):</p>
+                                        <input type="text" name="name"
+                                            placeholder="Your phone"
+                                            autocomplete="off">
+                                    </div>
+                                    <div class="input-main-form">
+                                        <p class="name">Subject:</p>
+                                        <input type="text" name="name"
+                                            placeholder="Your subject"
+                                            autocomplete="off">
+                                    </div>
                                 </div>
-                                <div class="contact-footer">
-                                    <img src="{% static 'myapp/assets/images/location_svg.svg' %}" alt="location_svg">
+                                <div class="input-main-form">
+                                    <p class="name">Message:</p>
+                                    <textarea
+                                        placeholder="Type your message..."></textarea>
+                                </div>
+                                <div class="form-submit-btn-main">
+                                    <button
+                                        class="explore-btn hover-slide-right form-submit-btn">
+                                        <span id="toggle">SUBMIT
+                                            <svg class="expo-arrow2"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="32"
+                                                height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <g>
+                                                    <path
+                                                        d="M6.66669 16H25.3334"
+                                                        stroke="#FFDB59"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M20 21.3333L25.3333 16"
+                                                        stroke="#FFDB59"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M20 10.6666L25.3333 16"
+                                                        stroke="#FFDB59"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div
+                            class="col-xxl-4 col-xl-4 col-lg-4 overflow-hidden">
+                            <div class="get-touch-box-main">
+                                <h2>Get In Touch</h2>
+                                <p class="well">When do they work well, and when
+                                    do they on us and finally, when do we
+                                    actually need how can we avoid them.</p>
+                                <div class="contact-footer contact-footer2">
+                                    <img
+                                        src="{% static 'myapp/assets/images/phone_svg.svg' %}"
+                                        alt="phone_svg">
+                                    <a href="tel:+91 8849095957"> +91
+                                        8849095957</a>
+                                </div>
+                                <div class="contact-footer contact-footer2">
+                                    <img
+                                        src="{% static 'myapp/assets/images/email_svg.svg' %}"
+                                        alt="email_svg">
+                                    <a
+                                        href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
+                                </div>
+                                <div class="contact-footer contact-footer2">
+                                    <img
+                                        src="{% static 'myapp/assets/images/location_svg.svg' %}"
+                                        alt="location_svg">
                                     <p>Gujarat, India</p>
                                 </div>
                             </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-3">
-                                <p class="useful-link">USEFUL LINKS</p>
-                                <div class="contact-footer">
-                                    <a href="/about">About</a>
-                                </div>
-                                <div class="contact-footer">
-                                    <a href="services.html">Services</a>
-                                </div>
-                                <div class="contact-footer">
-                                    <a href="/##">Portfolio</a>
-                                </div>
-                                <div class="contact-footer">
-                                    <a href="/###">Blog</a>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====================================== Conatct Section Two End===================================== -->
+            <div class="header_full_sec about_header_full_sec">
+                <div class="position-relative">
+                    <img class="client-bounce-img client-bounce-img1"
+                        src="{% static 'myapp/assets/images/client-photo-1.jpg' %}"
+                        alt="client-bounce-img1">
+                    <img class="client-bounce-img client-bounce-img2"
+                        src="{% static 'myapp/assets/images/client-photo-3.jpg' %}"
+                        alt="client-bounce-img2">
+                    <img class="client-bounce-img client-bounce-img3"
+                        src="{% static 'myapp/assets/images/client-photo-2.jpg' %}"
+                        alt="client-bounce-img3">
+                    <img class="client-bounce-img client-bounce-img4"
+                        src="{% static 'myapp/assets/images/client-photo-4.jpg' %}"
+                        alt="client-bounce-img4">
+                    <div class="logos">
+                        <div class="logos-slide">
+                            <div class="ticker__item">
+                                <a
+                                    href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
                             </div>
-                            <div class="col-xxl-3 col-xl-4 col-lg-4">
-                                <p class="useful-link">USEFUL LINKS</p>
-                                <div class="contact-footer">
-                                    <a href="/contact">Contact</a>
-                                </div>
-                                <div class="contact-footer">
-                                    <a href="/contact#">Privacy Policy</a>
-                                </div>
-                                <div class="contact-footer">
-                                    <a href="/contact#">Terms & Conditions</a>
-                                </div>
+                            <div class="ticker__item ticker__item_dark">
+                                <a href="tel:+91 8849095957">+91 8849095957</a>
+                            </div>
+                            <div class="ticker__item">
+                                <a
+                                    href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
+                            </div>
+                            <div class="ticker__item ticker__item_dark">
+                                <a href="tel:+91 8849095957">+91 8849095957</a>
+                            </div>
+                            <div class="ticker__item">
+                                <a
+                                    href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
+                            </div>
+                            <div class="ticker__item ticker__item_dark">
+                                <a href="tel:+91 8849095957">+91 8849095957</a>
                             </div>
                         </div>
-                        <!-- <div class="copyright_main">
+                    </div>
+                </div>
+            </div>
+            <!-- ====================================== Footer ===================================== -->
+            <footer>
+                <div class="mobile-itemright-footer" data-aos="fade-down">
+                    <div class="footer-box-right">
+                        <p class="mind-project">Have a project in your mind?</p>
+                        <div class="view-work-circle btn btn1">
+                            <a href="/contact" class="a1">CONTACT ME</a>
+                        </div>
+                        <div>
+                            <p class="contact_time">09 : 00 AM - 10 : 30 PM</p>
+                            <p class="monday">Monday to Saturday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bg">
+                    <div class="container footer-containe">
+                        <div class="hekl">
+                            <div class="row">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5">
+                                    <a href="index.html"><img
+                                            src="{% static 'myapp/assets/images/logo_svg.svg' %}"
+                                            alt="logo"></a>
+                                    <p class="work_well">When do they work well,
+                                        and when do they on us and finally,
+                                        when do we actually need how can we
+                                        avoid them.</p>
+                                    <div class="contact-footer">
+                                        <img
+                                            src="{% static 'myapp/assets/images/phone_svg.svg' %}"
+                                            alt="phone_svg">
+                                        <a href="tel:+91 8849095957">+91
+                                            8849095957</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <img
+                                            src="{% static 'myapp/assets/images/email_svg.svg' %}"
+                                            alt="email_svg">
+                                        <a
+                                            href="mailto:rekharahul.agarwal@gmail.com">rekharahul.agarwal@gmail.com</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <img
+                                            src="{% static 'myapp/assets/images/location_svg.svg' %}"
+                                            alt="location_svg">
+                                        <p>Gujarat, India</p>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3">
+                                    <p class="useful-link">USEFUL LINKS</p>
+                                    <div class="contact-footer">
+                                        <a href="/about">About</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <a href="services.html">Services</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <a href="/##">Portfolio</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <a href="/###">Blog</a>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-lg-4">
+                                    <p class="useful-link">USEFUL LINKS</p>
+                                    <div class="contact-footer">
+                                        <a href="/contact">Contact</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <a href="/contact#">Privacy Policy</a>
+                                    </div>
+                                    <div class="contact-footer">
+                                        <a href="/contact#">Terms &
+                                            Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="copyright_main">
                             <p class="copyright">© 2024 | All rights reserved by
                                 <a href="https://1.envato.market/website-portfolio" target="_blank">The_Krishna</a>
                             </p>
@@ -339,38 +439,46 @@
                                 </svg>
                             </div>
                         </div> -->
-                    </div>
-                    <div class="desktop-itemright-footer">
-                        <div class="footer-box-right">
-                            <p class="mind-project">Have a project in your mind?</p>
-                            <div class="view-work-circle btn btn1">
-                                <a href="/contact" class="a1">CONTACT ME</a>
-                            </div>
-                            <div>
-                                <p class="contact_time">09 : 00 AM - 10 : 30 PM</p>
-                                <p class="monday">Monday to Saturday</p>
+                        </div>
+                        <div class="desktop-itemright-footer">
+                            <div class="footer-box-right">
+                                <p class="mind-project">Have a project in your
+                                    mind?</p>
+                                <div class="view-work-circle btn btn1">
+                                    <a href="/contact" class="a1">CONTACT ME</a>
+                                </div>
+                                <div>
+                                    <p class="contact_time">09 : 00 AM - 10 : 30
+                                        PM</p>
+                                    <p class="monday">Monday to Saturday</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </footer>
+            <!-- ====================================== Footer End ===================================== -->
+            <!-- ====================================== Progress Scroll Bottom To Top ===================================== -->
+            <div class="progress-wrap cursor-pointer">
+                <svg class="progress-circle svg-content" width="100%"
+                    height="100%" viewBox="-1 -1 102 102">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
             </div>
-        </footer>
-        <!-- ====================================== Footer End ===================================== -->
-        <!-- ====================================== Progress Scroll Bottom To Top ===================================== -->
-        <div class="progress-wrap cursor-pointer">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
+            <!-- ====================================== Progress Scroll Bottom To Top End ===================================== -->
         </div>
-        <!-- ====================================== Progress Scroll Bottom To Top End ===================================== -->
-    </div>
-    <script src="{% static 'myapp/assets/javascript/jquery.min.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/fancybox.min.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/gsap.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/magnific-popup.min.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/aos.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/slick.min.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/bootstrap.min.js' %}"></script>
-    <script src="{% static 'myapp/assets/javascript/script.js' %}"></script>
-</body>
+        <script
+            src="{% static 'myapp/assets/javascript/jquery.min.js' %}"></script>
+        <script
+            src="{% static 'myapp/assets/javascript/fancybox.min.js' %}"></script>
+        <script src="{% static 'myapp/assets/javascript/gsap.js' %}"></script>
+        <script
+            src="{% static 'myapp/assets/javascript/magnific-popup.min.js' %}"></script>
+        <script src="{% static 'myapp/assets/javascript/aos.js' %}"></script>
+        <script
+            src="{% static 'myapp/assets/javascript/slick.min.js' %}"></script>
+        <script
+            src="{% static 'myapp/assets/javascript/bootstrap.min.js' %}"></script>
+        <script src="{% static 'myapp/assets/javascript/script.js' %}"></script>
+    </body>
 </html>
