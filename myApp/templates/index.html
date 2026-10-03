@@ -4,7 +4,8 @@
         {% load static %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Freelancer</title>
+        <title>Rahul Agarwal | AI Engineer: GenAI, LLMs, RAG & AI Agents</title>
+        <meta name="description" content="Rahul Agarwal is an AI Engineer building production AI agents, RAG systems, LLM integrations, voice AI and computer vision backends with Python, FastAPI, LangChain and LangGraph.">
         <link rel="icon" type="image/x-icon"
             href="{% static 'myapp/assets/images/favicon.svg' %}">
         <link rel="stylesheet" href="{% static 'myapp/assets/css/swap.css' %}">
@@ -20,6 +21,7 @@
         <link rel="stylesheet" href="{% static 'myapp/assets/css/style.css' %}">
         <link rel="stylesheet"
             href="{% static 'myapp/assets/css/media_query.css' %}">
+        <link rel="stylesheet" href="{% static 'myapp/assets/css/ai-overrides.css' %}">
     </head>
     <body>
         <div class="site_contain">
@@ -37,7 +39,7 @@
                 <div class="container">
                     <div class="top-navbar_full">
                         <div class="back-btn">
-                            <a href="/index">
+                            <a href="/">
                                 <img
                                     src="{% static 'myapp/assets/images/logo_svg.svg' %}"
                                     alt="logo">
@@ -48,13 +50,13 @@
                                 <li class="menu-active"><a
                                         href="/">Home</a></li>
                                 <li><a href="/about">About</a></li>
-                                <li><a href="/####">Services</a></li>
-                                <li><a href="/####">Portfolio</a></li>
+                                <li><a href="/#services">Services</a></li>
+                                <li><a href="/#latest-projects">Portfolio</a></li>
                                 <li><a href="/blog">Blog</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                             <a
-                                href="{% static 'myapp/assets/pdf/Rahu_Resume_AI.pdf' %}">
+                                href="{% static 'myapp/assets/pdf/Rahul_Agarwal_AI_Engineer_Resume.pdf' %}">
                                 <div class="cv-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24"
@@ -103,45 +105,15 @@
                                                     <div
                                                         class="col-lg-7 side-menu-scroll">
                                                         <div class="heading2"><a
-                                                                href="/index">Home</a></div>
+                                                                href="/">Home</a></div>
                                                         <div class="heading2"><a
                                                                 href="/about">About</a></div>
-                                                        <div class="accordion">
-                                                            <div
-                                                                class="heading2 cursor-arrow">
-                                                                <a
-                                                                    href="/####">
-                                                                    Portfolio
-                                                                </a></div>
-                                                            <div
-                                                                class="heading2">
-                                                                <a href>
-                                                                    Single
-                                                                    Portfolio
-                                                                </a></div>
-                                                            <div
-                                                                class="heading2">
-                                                                <a href>
-                                                                    Services
-                                                                </a></div>
-
-                                                            <div
-                                                                class="heading2">
-                                                                <a href>
-                                                                    Single
-                                                                    Services
-                                                                </a></div>
-                                                            <div
-                                                                class="heading2 cursor-arrow">
-                                                                <a href>
-                                                                    Blog
-                                                                </a></div>
-                                                            <div
-                                                                class="heading2">
-                                                                <a href>
-                                                                    Single Blog
-                                                                </a></div>
-                                                        </div>
+                                                        <div class="heading2"><a
+                                                                href="/#services">Services</a></div>
+                                                        <div class="heading2"><a
+                                                                href="/#latest-projects">Portfolio</a></div>
+                                                        <div class="heading2"><a
+                                                                href="/blog">Blog</a></div>
                                                         <div class="heading2"><a
                                                                 href="/contact">Contact</a></div>
                                                     </div>
@@ -189,7 +161,7 @@
                             src="{% static 'myapp/assets/images/media-line-top.svg' %}"
                             alt="media-line-top">
                         <div>
-                            <a href="mailto:rekharahul.agarwal@mail.com">
+                            <a href="mailto:rekharahul.agarwal@gmail.com">
                                 <svg class="icon"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20" height="20"
@@ -299,7 +271,7 @@
                     <div class="container2 position-relative overflow-hidden">
                         <p class="main-text" data-aos="fade-down">Hello, I am
                             <span>👋</span></p>
-                        <h1><mark>Python | AI-ML</mark> Developer.</h1>
+                        <h1><mark>Generative AI</mark> Engineer.</h1>
                         <!-- Python Developer | AI-ML Specailist -->
                         <div class="home-girl-img-main">
                             <div class="position-relative">
@@ -323,24 +295,15 @@
                                 <div id="worked_box">
                                     <div class="worked-box"
                                         data-aos="fade-right">
-                                        <p class="worked-more">Worked with more
-                                            than 1 people</p>
+                                        <p class="worked-more">Shipped AI for BCCL, Mahindra, PCBL &amp; startups</p>
                                         <div
                                             class="client-img-main position-relative">
-                                            <img class="client-img client-img1"
-                                                src="{% static 'myapp/assets/images/clients-img1.jpg' %}"
-                                                alt="clients-img1">
-                                            <img class="client-img client-img2"
-                                                src="{% static 'myapp/assets/images/clients-img2.jpg' %}"
-                                                alt="clients-img2">
-                                            <img class="client-img client-img3"
-                                                src="{% static 'myapp/assets/images/clients-img3.jpg' %}"
-                                                alt="clients-img3">
-                                            <img class="client-img client-img4"
-                                                src="{% static 'myapp/assets/images/clients-img4.jpg' %}"
-                                                alt="clients-img4">
+                                            <span class="client-img client-img1 client-initial">B</span>
+                                            <span class="client-img client-img2 client-initial">M</span>
+                                            <span class="client-img client-img3 client-initial">P</span>
+                                            <span class="client-img client-img4 client-initial">T</span>
                                             <p class="worked-more worked-more2">
-                                                1+ Clients</p>
+                                                5+ Clients</p>
                                         </div>
                                     </div>
                                 </div>
@@ -350,18 +313,14 @@
                     <div class="section-main-right-contain overflow-hidden">
                         <div class="section-main-right-contain-sub"
                             data-aos="fade-left">
-                            <h2 class="total-project">1+</h2>
-                            <p class="project-complted">PROJECT COMPLETED</p>
+                            <h2 class="total-project">14+</h2>
+                            <p class="project-complted">AI PROJECTS DELIVERED</p>
                         </div>
                         <div class="flower-box" data-aos="fade-left">
                             <img class="flower"
                                 src="{% static 'myapp/assets/images/flower.png' %}"
                                 alt="flower">
-                            <h2 class="Freelance">A <span>Freelancer Developer
-                                    based in India.</span> I
-                                strives to build immersive and beautiful web
-                                applications through carefully crafted
-                                used-centric design.</h2>
+                            <h2 class="Freelance">An <span>AI Engineer based in India.</span> I build AI agents, RAG systems and LLM-powered products that run in production, not just in demos.</h2>
                         </div>
                         <div class="mouse-scroll-box">
                             <a href="#section-two" class="mouse-main">
@@ -416,9 +375,8 @@
                                 <img class="years-img"
                                     src="{% static 'myapp/assets/images/years-img.png' %}"
                                     alt="years-img">
-                                <div class="digit">01</div>
-                                <div class="circle-text">YEARS OF<br> WORKING
-                                    EXPERICE</div>
+                                <div class="digit">2.7</div>
+                                <div class="circle-text">YEARS OF<br> AI EXPERIENCE</div>
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6">
@@ -429,20 +387,15 @@
                                         alt="trophy">
                                 </div>
                                 <div class>
-                                    <h3 class="independent">R- 10 Aisa- Pacific
-                                        Level</h3>
-                                    <p class="annual">Rank 1 in 2022</p>
+                                    <h3 class="independent">IEEE MSP Cup 2022 Winner</h3>
+                                    <p class="annual">Rank 1, R-10 Asia-Pacific</p>
                                 </div>
                             </div>
-                            <h3 class="self-taught" data-aos="fade-up">Hello!
-                                I’m <span>Rahul</span> a self-taught
-                                <span> Python Developer and AI-ML Specailist
-                                </span>driven by innovation. With
-                                over <span>a year of hands-on experience,
-                                </span>. I built my expertise from the
-                                ground up and further refined it at <span>Avinya
-                                    Digital Innovations</span>. Let’s bring
-                                ideas to life!
+                            <h3 class="self-taught" data-aos="fade-up">Hello! I’m <span>Rahul</span>, an
+                                <span>AI Engineer</span> building Generative AI, LLM, RAG and Agentic AI
+                                products. With <span>2.7+ years of hands-on experience</span> at
+                                <span>Aureate Labs, Xconics and Avinya</span>, I’ve shipped AI for
+                                BCCL, Mahindra Logistics and PCBL. Let’s bring your AI idea to life!
                             </h3>
                             <!-- <p class="odio" data-aos="fade-up">Urna neque sollicitudin odio tempus eleifend est. Vestibulum
                             dictum turpis diam arcu rutrum interdum aliquet iaculis.
@@ -480,85 +433,36 @@
             <!-- ====================================== Section Two End ===================================== -->
             <!-- ====================================== Brands Marquee Section ===================================== -->
             <div class="Marquee-main overflow-hidden">
-                <h3 data-aos="fade-down">Trusted by World Leading Brands</h3>
+                <h3 data-aos="fade-down">Built AI for Teams &amp; Clients At</h3>
                 <div class="logos logos2">
                     <div class="logos-slide">
                         <div class="marquee__content">
+                            {% for c in clients %}
                             <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo1.png' %}"
-                                    alt="brand-logo1">
+                                <span class="brand-name">{{ c }}</span>
                             </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo2.png' %}"
-                                    alt="brand-logo2">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo3.png' %}"
-                                    alt="brand-logo3">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo4.png' %}"
-                                    alt="brand-logo4">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo5.png' %}"
-                                    alt="brand-logo5">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo6.png' %}"
-                                    alt="brand-logo6">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo7.png' %}"
-                                    alt="brand-logo7">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo8.png' %}"
-                                    alt="brand-logo8">
-                            </div>
-                            <div class="marquee-img-main">
-                                <img class="brand-logos"
-                                    src="{% static 'myapp/assets/images/brand-logo7.png' %}"
-                                    alt="brand-logo9">
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </div>
             <!-- =============================== Brands Marquee Section End =============================== -->
             <!-- ====================================== Section Three ===================================== -->
-            <section class="section-three overflow-hidden">
+            <section class="section-three overflow-hidden" id="services">
                 <div class="container">
                     <div class="row services-section">
                         <div class="col-xxl-4 col-xl-4 col-lg-4">
-                            <p class="our-services" data-aos="fade-up">OUR
-                                SERVICES</p>
-                            <h2 class="our-solution" data-aos="fade-up">Solution
-                                We Provide.</h2>
-                            <p class="uran odio" data-aos="fade-up">We offer
-                                tailored solutions to meet the
-                                unique needs of your project. From efficient web
-                                scraping and automation to
-                                cutting-edge AI and computer vision, our
-                                services are designed to deliver
-                                innovative and impactful results.
-                            </p>
+                            <p class="our-services" data-aos="fade-up">OUR SERVICES</p>
+                            <h2 class="our-solution" data-aos="fade-up">AI Solutions I Build.</h2>
+                            <p class="uran odio" data-aos="fade-up">From AI agents and RAG
+                                assistants to voice AI and computer vision, I take AI from idea to
+                                production: the model, the backend, the evals and the cloud deploy,
+                                handled by one engineer.</p>
                             <div class="services-circle-main">
-                                <div class="view-work-circle btn btn1"
-                                    id="circle1" data-aos="zoom-in-right">
-                                    <a href="/##" class="a1">VIEW MY
-                                        WORK</a>
+                                <div class="view-work-circle btn btn1" id="circle1" data-aos="zoom-in-right">
+                                    <a href="#latest-projects" class="a1">VIEW MY WORK</a>
                                 </div>
-                                <div class="contact-circle"
-                                    data-aos="zoom-in-left">
+                                <div class="contact-circle" data-aos="zoom-in-left">
                                     <div class="view-work-circle btn btn2">
                                         <a href="/contact">CONTACT ME</a>
                                     </div>
@@ -567,73 +471,16 @@
                         </div>
                         <div class="col-xxl-7 col-xl-7 col-lg-7">
                             <div id="faq-sec">
-                                <div class='nested-accordion'
-                                    data-aos="fade-up">
-                                    <h3 class="boder-top selected">AI
-                                        Services</h3>
-                                    <div class='comment'>
+                                {% for sv in services %}
+                                <div class='nested-accordion' data-aos="fade-up">
+                                    <h3 class="boder-top{% if forloop.first %} selected{% endif %}{% if forloop.last %} border-bottom-0 pb-0{% endif %}">{{ sv.title }}</h3>
+                                    <div class='comment'>{{ sv.summary }}
                                         <ul class="accor-list">
-                                            <!-- <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li> -->
+                                            {% for pt in sv.points %}<li>{{ pt }}</li>{% endfor %}
                                         </ul>
                                     </div>
                                 </div>
-                                <div class='nested-accordion'
-                                    data-aos="fade-up">
-                                    <h3 class="boder-top ">Software Development
-                                        & Automation</h3>
-                                    <div class='comment'>Project systematization
-                                        is something I place a lot of emphasis
-                                        on.
-                                        My passion Design Systems.
-                                        <ul class="accor-list">
-                                            <li>Automation Solutions</li>
-                                            <li>Web Scraping (Data Extraction
-                                                from Websites)</li>
-                                            <li>Chrome Extensions</li>
-                                            <li>Python Development</li>
-                                            <li>Chrome Extensions</li>
-                                            <li>User Experience Development</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class='nested-accordion'
-                                    data-aos="fade-up">
-                                    <h3 class="boder-top "> AI & Machine
-                                        Learning Solutions</h3>
-                                    <div class='comment'>Project systematization
-                                        is something I place a lot of emphasis
-                                        on.
-                                        My passion Design Systems.
-                                        <ul class="accor-list">
-                                            <li>Computer Vision Solutions</li>
-                                            <li>YOLO Models (Object
-                                                Detection)</li>
-                                            <li>Machine Learning Models (Custom
-                                                models tailored to needs)</li>
-                                            <li>AI-powered Automation</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class='nested-accordion'
-                                    data-aos="fade-up">
-                                    <h3
-                                        class="boder-top  border-bottom-0 pb-0">Web
-                                        Development & Design</h3>
-                                    <div class='comment'>Project systematization
-                                        is something I place a lot of emphasis
-                                        on.
-                                        My passion Design Systems.
-                                        <ul class="accor-list">
-                                            <li>User Experience Development</li>
-                                            <li>Django Web Framework</li>
-                                            <li>API Integration</li>
-                                            <li>Flask Framewwork</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -644,592 +491,94 @@
             <div class="header_full_sec overflow-hidden">
                 <div class="logos">
                     <div class="logos-slide">
-                        <div class="ticker__item">User Interface</div>
-                        <div class="ticker__item ticker__item_dark">User
-                            Experience</div>
-                        <div class="ticker__item">Branding</div>
-                        <div
-                            class="ticker__item ticker__item_dark">Marketing</div>
-                        <div class="ticker__item">User Interface</div>
-                        <div class="ticker__item ticker__item_dark">User
-                            Experience</div>
-                        <div class="ticker__item">Branding</div>
-                        <div
-                            class="ticker__item ticker__item_dark">Marketing</div>
-                        <div class="ticker__item">User Interface</div>
-                        <div class="ticker__item ticker__item_dark">User
-                            Experience</div>
+                        {% for t in ticker %}<div class="ticker__item{% if forloop.counter|divisibleby:2 %} ticker__item_dark{% endif %}">{{ t }}</div>
+                        {% endfor %}{% for t in ticker %}<div class="ticker__item{% if forloop.counter|divisibleby:2 %} ticker__item_dark{% endif %}">{{ t }}</div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
             <!-- ====================================== User Branding Marquee Section End ===================================== -->
             <!-- ====================================== Section Four ===================================== -->
-            <section class="section-four overflow-hidden">
+            <section class="section-four overflow-hidden" id="skills">
                 <div class="container">
-                    <p class="our-services my_skills" data-aos="fade-up">MY
-                        SKILLS</p>
-                    <h2 class="our-solution my-expertise"
-                        data-aos="fade-down">My Expertise.</h2>
+                    <p class="our-services my_skills" data-aos="fade-up">MY SKILLS</p>
+                    <h2 class="our-solution my-expertise" data-aos="fade-down">My Expertise.</h2>
                     <div class="skill-type-main">
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/color/48/web-scraper.png"
-                                alt="wordpress">
+                        {% for e in expertise %}
+                        <div class="skills-box-main" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="{{ e.icon }}" alt="{{ e.label }}" width="48" height="48">
                             <div class="counter">
-                                <h3 class="count count2" data-count="98">0</h3>
-                                <p>Web Scrapping</p>
+                                <h3 class="count count2" data-count="{{ e.value }}">0</h3>
+                                <p>{{ e.label }}</p>
                             </div>
                         </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=qV-JzWYl9dzP&format=png"
-                                alt="elementor">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="86">86%</h3>
-                                <p>Django</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=apebs8fnmi4m&format=png"
-                                alt="html-logo">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="95">95%</h3>
-                                <p>Computer Vision</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=13441&format=png"
-                                alt="js-logo">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="89">89%</h3>
-                                <p>Python</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=fTkqveCX0blI&format=png"
-                                alt="figma">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="96">96%</h3>
-                                <p>Machine learning</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=XmoLvUB2QlE3&format=png"
-                                alt="diamond">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="87">87%</h3>
-                                <p>Artifical Intelligence and it's Services</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=64&id=xaquNfre75yC&format=png"
-                                alt="photoshop">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="85">85%</h3>
-                                <p>Automation Solutions</p>
-                            </div>
-                        </div>
-                        <div class="skills-box-main" data-aos="flip-left"
-                            data-aos-easing="ease-out-cubic"
-                            data-aos-duration="2000">
-                            <img
-                                src="https://img.icons8.com/?size=48&id=63785&format=png"
-                                alt="illustrator">
-                            <div class="counter">
-                                <h3 class="count count2"
-                                    data-count="93">93%</h3>
-                                <p>Chrome Extensions</p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
             <!-- ====================================== Section Four End ===================================== -->
             <!-- ====================================== Section Five ===================================== -->
-            <section class="section-five overflow-hidden">
+            <section class="section-five overflow-hidden" id="latest-projects">
                 <div class="container">
-                    <p class="our-services discover-our-cases"
-                        data-aos="fade-up">DISCOVER OUR CASES</p>
+                    <p class="our-services discover-our-cases" data-aos="fade-up">DISCOVER MY WORK</p>
                     <div class="tab-header">
                         <div>
-                            <h2 class="our-solution latest_project"
-                                data-aos="fade-down">Latest Projects.</h2>
+                            <h2 class="our-solution latest_project" data-aos="fade-down">Latest Projects.</h2>
                         </div>
                         <div class="tab-bar" data-aos="fade-up">
-                            <button class="tab-button active"
-                                data-tab="tab1"><span>8</span>ALL</button>
-                            <button class="tab-button"
-                                data-tab="tab2"><span>4</span>AI-ML</button>
-                            <button class="tab-button"
-                                data-tab="tab3"><span>2</span>Computer
-                                Vision</button>
-                            <button class="tab-button"
-                                data-tab="tab4"><span>1</span>Web
-                                Scraping</button>
-                            <button class="tab-button"
-                                data-tab="tab5"><span>2</span>Python +
-                                IoT</button>
-                            <button class="tab-button"
-                                data-tab="tab6"><span>2</span>Automation</button>
-                            <button class="tab-button"
-                                data-tab="tab7"><span>2</span>Apps Script &
-                                Sheet</button>
+                            <button class="tab-button active" data-tab="tab1"><span>{{ projects|length }}</span>ALL</button>
+                            {% for t in project_tabs %}
+                            <button class="tab-button" data-tab="{{ t.id }}"><span>{{ t.projects|length }}</span>{{ t.label }}</button>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="tab-content">
-                        <div id="tab1" class="tab-pane active"
-                            data-aos="zoom-in">
-                            <div class="tab-imgs-main">
+                        <div id="tab1" class="tab-pane active" data-aos="zoom-in">
+                            <div class="project-grid-2">
+                                {% for p in featured %}
                                 <div class="tab1sub grid">
-                                    <a href="##">
+                                    <a href="{% if p.url %}{{ p.url }}{% else %}#latest-projects{% endif %}"{% if p.url %} target="_blank" rel="noopener"{% endif %} class="project-card-link">
                                         <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img.jpg' %}"
-                                                alt="tab-content-img">
-                                            <p
-                                                class="tab-content-text">AI-ML</p>
-                                            <h2 class="tab-product-design">AI
-                                                Web Scraper</h2>
+                                            <div class="project-media">{% if p.image %}<img class="tab-imgs" src="{% static p.image %}" alt="{{ p.title }} screenshot" loading="lazy">{% else %}<div class="tab-imgs project-cover cover-{{ p.category }}"><span class="cover-kicker">{{ p.category_label }}</span><span class="cover-title">{{ p.impact.0 }}</span><span class="cover-stack">{{ p.stack|slice:":3"|join:" · " }}</span></div>{% endif %}</div>
+                                            <p class="tab-content-text">{{ p.category_label }} · {{ p.client }}{% if p.url %} <span class="live-badge">Live demo ↗</span>{% endif %}</p>
+                                            <h2 class="tab-product-design">{{ p.title }}</h2>
+                                            <p class="project-summary">{{ p.summary }}</p>
+                                            <ul class="project-tags">{% for t in p.stack %}<li>{{ t }}</li>{% endfor %}</ul>
                                         </div>
                                     </a>
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/html-video-img.jpg' %}"
-                                                alt="html-video-img">
-                                            <p class="tab-content-text">Computer
-                                                Vision</p>
-                                            <h2 class="tab-product-design">AR
-                                                Filters</h2>
-                                        </div>
-                                    </a>
-                                    <div>
-                                        <button
-                                            class="explore-btn hover-slide-right see-more-btn"
-                                            onclick="window.location.href='/####'">
-                                            <span>SEE MORE WORKS
-                                                <svg class="expo-arrow2"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="32"
-                                                    height="32"
-                                                    viewBox="0 0 32 32"
-                                                    fill="none">
-                                                    <g>
-                                                        <path
-                                                            d="M6.66669 16H25.3334"
-                                                            stroke="#FFDB59"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                        <path
-                                                            d="M20 21.3333L25.3333 16"
-                                                            stroke="#FFDB59"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                        <path
-                                                            d="M20 10.6666L25.3333 16"
-                                                            stroke="#FFDB59"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </g>
-                                                </svg>
-                                            </span>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="projects-cta">
+                                <button class="explore-btn hover-slide-right see-more-btn" onclick="window.location.href='/contact'">
+                                            <span>DISCUSS YOUR PROJECT <svg class="expo-arrow2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><g><path d="M6.66669 16H25.3334" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 21.3333L25.3333 16" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 10.6666L25.3333 16" stroke="#FFDB59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></span>
                                         </button>
-                                    </div>
-                                </div>
-                                <div class="tab1sub grid" id="pop">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/gallery-tab-img.jpg' %}"
-                                                alt="gallery-tab-img">
-                                            <p class="tab-content-text">Python &
-                                                Chrome Extension</p>
-                                            <h2
-                                                class="tab-product-design">Upwork
-                                                Extension</h2>
-                                        </div>
-                                    </a>
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/yt-video-img.jpg' %}"
-                                                alt="yt-video-img">
-                                            <p
-                                                class="tab-content-text">Automation</p>
-                                            <h2 class="tab-product-design">CA
-                                                Automation & .exe</h2>
-                                        </div>
-                                    </a>
-                                </div>
                             </div>
                         </div>
-                        <div id="tab2" class="tab-pane tab-pane2 ">
-                            <div class="tab-imgs-main"
-                                style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                                <a href="##">
-                                    <div class="tab1sub grid">
+                        {% for t in project_tabs %}
+                        <div id="{{ t.id }}" class="tab-pane tab-pane2">
+                            <div class="tab-imgs-main project-grid-2">
+                                {% for p in t.projects %}
+                                <div class="tab1sub grid">
+                                    <a href="{% if p.url %}{{ p.url }}{% else %}#latest-projects{% endif %}"{% if p.url %} target="_blank" rel="noopener"{% endif %} class="project-card-link">
                                         <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img.jpg' %}"
-                                                alt="tab-content-img">
-                                            <p
-                                                class="tab-content-text">AI-ML</p>
-                                            <h2
-                                                class="tab-product-design p-0">AI
-                                                Web Scraper</h2>
+                                            <div class="project-media">{% if p.image %}<img class="tab-imgs" src="{% static p.image %}" alt="{{ p.title }} screenshot" loading="lazy">{% else %}<div class="tab-imgs project-cover cover-{{ p.category }}"><span class="cover-kicker">{{ p.category_label }}</span><span class="cover-title">{{ p.impact.0 }}</span><span class="cover-stack">{{ p.stack|slice:":3"|join:" · " }}</span></div>{% endif %}</div>
+                                            <p class="tab-content-text">{{ p.category_label }} · {{ p.client }}{% if p.url %} <span class="live-badge">Live demo ↗</span>{% endif %}</p>
+                                            <h2 class="tab-product-design">{{ p.title }}</h2>
+                                            <p class="project-summary">{{ p.summary }}</p>
+                                            <ul class="project-tags">{% for t in p.stack %}<li>{{ t }}</li>{% endfor %}</ul>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="##">
-                                    <div class="tab1sub grid">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img2.jpg' %}"
-                                                alt="tab-content-img2">
-                                            <p
-                                                class="tab-content-text">AI-ML</p>
-                                            <h2
-                                                class="tab-product-design p-0">Fire
-                                                Detection</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="##">
-                                    <div class="tab1sub grid">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img2.jpg' %}"
-                                                alt="tab-content-img2">
-                                            <p
-                                                class="tab-content-text">AI-ML</p>
-                                            <h2
-                                                class="tab-product-design p-0">Image
-                                                Generation Tool</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="##">
-                                    <div class="tab1sub grid">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img2.jpg' %}"
-                                                alt="tab-content-img2">
-                                            <p
-                                                class="tab-content-text">AI-ML</p>
-                                            <h2
-                                                class="tab-product-design p-0">AI-Poweered
-                                                Resume Optimization</h2>
-                                        </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                                {% endfor %}
                             </div>
                         </div>
-                        <div id="tab3" class="tab-pane tab-pane2">
-                            <div class="tab-imgs-main">
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/tab-content-img2.jpg' %}"
-                                                alt="tab-content-img">
-                                            <p class="tab-content-text">Computer
-                                                Vision</p>
-                                            <h2
-                                                class="tab-product-design p-0">AR
-                                                Filters</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/html-video-img.jpg' %}"
-                                                alt="html-video-img">
-                                            <p class="tab-content-text">Computer
-                                                Vision</p>
-                                            <h2
-                                                class="tab-product-design p-0">Exercise
-                                                Pose Recognition</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab4" class="tab-pane tab-pane2">
-                            <div class="tab-imgs-main">
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/html-video-img.jpg' %}"
-                                                alt="html-video-img">
-                                            <p class="tab-content-text">Web
-                                                Scraping</p>
-                                            <h2
-                                                class="tab-product-design p-0">Extract
-                                                Data from Websites: Which You
-                                                can see</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab5" class="tab-pane tab-pane2">
-                            <div class="tab-imgs-main">
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/yt-video-img.jpg' %}"
-                                                alt="yt-video-img">
-                                            <p class="tab-content-text">Python +
-                                                IoT</p>
-                                            <h2
-                                                class="tab-product-design p-0">Upwork
-                                                Extension</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/yt-video-img.jpg' %}"
-                                                alt="yt-video-img">
-                                            <p class="tab-content-text">Python +
-                                                IoT</p>
-                                            <h2
-                                                class="tab-product-design p-0">Ping
-                                                Pong</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab6" class="tab-pane tab-pane2">
-                            <div class="tab-imgs-main">
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/vimeo-video.jpg' %}"
-                                                alt="vimeo-video">
-                                            <p
-                                                class="tab-content-text">Automation</p>
-                                            <h2
-                                                class="tab-product-design p-0">CA
-                                                Automation & .exe</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/html-video-img.jpg' %}"
-                                                alt="html-video-img">
-                                            <p
-                                                class="tab-content-text">Automation</p>
-                                            <h2
-                                                class="tab-product-design p-0">Whatsapp
-                                                Automation</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab7" class="tab-pane tab-pane2">
-                            <div class="tab-imgs-main">
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/sound-cloud-img.jpg' %}"
-                                                alt="sound-cloud-img">
-                                            <p class="tab-content-text">Apps
-                                                Script</p>
-                                            <h2
-                                                class="tab-product-design p-0">Invoice
-                                                Software Application</h2>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab1sub grid">
-                                    <a href="##">
-                                        <div class="effect-milo">
-                                            <img class="tab-imgs"
-                                                src="{% static 'myapp/assets/images/sound-cloud-img.jpg' %}"
-                                                alt="sound-cloud-img">
-                                            <p class="tab-content-text">Apps
-                                                Sheet</p>
-                                            <h2
-                                                class="tab-product-design p-0">Rent
-                                                Software management </h2>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
             <!-- ====================================== Section Five End ===================================== -->
-            <!-- ====================================== Section Six ===================================== -->
-            <section class="section-six overflow-hidden">
-                <div class="container">
-                    <p class="our-services" data-aos="fade-up">TESTIMONIALS</p>
-                    <h2 class="our-solution latest_project"
-                        data-aos="fade-down">What Our Clients Say.</h2>
-                    <!-- <div class="testimonial_slider" data-aos="zoom-in-left">
-                    <div>
-                        <div class="great-work-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"
-                                fill="none">
-                                <g>
-                                    <path
-                                        d="M11.9903 8.97047L11.9834 8.98364L11.977 8.997C10.9357 11.1534 10.3315 13.3985 10.1705 15.7265L10.1087 16.6197L10.9897 16.7794L16.4359 17.7668V29H1V20.6818C1 15.4562 2.21666 11.3738 4.55213 8.33851C6.85551 5.3666 9.89607 3.01035 13.7015 1.27904L15.1132 3.79798C14.0057 5.37106 12.9651 7.09582 11.9903 8.97047ZM34.5544 8.97047L34.5475 8.98364L34.5411 8.997C33.4998 11.1534 32.8956 13.3985 32.7346 15.7265L32.6728 16.6197L33.5538 16.7794L39 17.7668V29H23.5641V20.6818C23.5641 15.4561 24.7808 11.3737 27.1163 8.33843C29.4197 5.36656 32.4602 3.01033 36.2656 1.27904L37.6773 3.79798C36.5698 5.37106 35.5292 7.09583 34.5544 8.97047Z"
-                                        stroke="#FF7D61" stroke-width="2" />
-                                </g>
-                            </svg>
-                            <h3>Great Work!</h3>
-                        </div>
-                        <p class="posuere">Ultrices sed sed ut posuere at. Risus urna augue orci malesuada etiam diam
-                            enim. Parturient habitasse massa feugiat posuere odio leo vitae feugiat. Scelerisque cras
-                            viverra nunc ipsum et duis dui proin a. Urna rhoncus nullam odio sed vitae.
-                        </p>
-                        <svg class="slider-line" xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 0 630 33"
-                            fill="none">
-                            <path d="M630 1H100L70 31V1H0" stroke="#909090" />
-                        </svg>
-                        <div class="client_details">
-                            <img class="testimonial_client_img" src="{% static 'myapp/assets/images/testimonial_client_img1.jpg' %}"
-                                alt="testimonial_client_img1">
-                            <div>
-                                <h3 class="client-name">Olivia Segio</h3>
-                                <p class="studio">Oria Studio</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="great-work-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"
-                                fill="none">
-                                <g>
-                                    <path
-                                        d="M11.9903 8.97047L11.9834 8.98364L11.977 8.997C10.9357 11.1534 10.3315 13.3985 10.1705 15.7265L10.1087 16.6197L10.9897 16.7794L16.4359 17.7668V29H1V20.6818C1 15.4562 2.21666 11.3738 4.55213 8.33851C6.85551 5.3666 9.89607 3.01035 13.7015 1.27904L15.1132 3.79798C14.0057 5.37106 12.9651 7.09582 11.9903 8.97047ZM34.5544 8.97047L34.5475 8.98364L34.5411 8.997C33.4998 11.1534 32.8956 13.3985 32.7346 15.7265L32.6728 16.6197L33.5538 16.7794L39 17.7668V29H23.5641V20.6818C23.5641 15.4561 24.7808 11.3737 27.1163 8.33843C29.4197 5.36656 32.4602 3.01033 36.2656 1.27904L37.6773 3.79798C36.5698 5.37106 35.5292 7.09583 34.5544 8.97047Z"
-                                        stroke="#FF7D61" stroke-width="2" />
-                                </g>
-                            </svg>
-                            <h3>Best Creative Agency!</h3>
-                        </div>
-                        <p class="posuere">Lectus quis sit diam aenean. Neque sed blandit sed at. Adipiscing eu aenean
-                            viverra nunc. Lacus ornare massa scelerisque feugiat pretium diam massa purus. Ultrices
-                            elementum mattis magna cras viverra nisl enim.
-                        </p>
-                        <svg class="slider-line" xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 0 630 33"
-                            fill="none">
-                            <path d="M630 1H100L70 31V1H0" stroke="#909090" />
-                        </svg>
-                        <div class="client_details">
-                            <img class="testimonial_client_img" src="{% static 'myapp/assets/images/testimonial_client_img2.jpg' %}"
-                                alt="testimonial_client_img1">
-                            <div>
-                                <h3 class="client-name">Alex Regan</h3>
-                                <p class="studio">Square Agency</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="great-work-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"
-                                fill="none">
-                                <g>
-                                    <path
-                                        d="M11.9903 8.97047L11.9834 8.98364L11.977 8.997C10.9357 11.1534 10.3315 13.3985 10.1705 15.7265L10.1087 16.6197L10.9897 16.7794L16.4359 17.7668V29H1V20.6818C1 15.4562 2.21666 11.3738 4.55213 8.33851C6.85551 5.3666 9.89607 3.01035 13.7015 1.27904L15.1132 3.79798C14.0057 5.37106 12.9651 7.09582 11.9903 8.97047ZM34.5544 8.97047L34.5475 8.98364L34.5411 8.997C33.4998 11.1534 32.8956 13.3985 32.7346 15.7265L32.6728 16.6197L33.5538 16.7794L39 17.7668V29H23.5641V20.6818C23.5641 15.4561 24.7808 11.3737 27.1163 8.33843C29.4197 5.36656 32.4602 3.01033 36.2656 1.27904L37.6773 3.79798C36.5698 5.37106 35.5292 7.09583 34.5544 8.97047Z"
-                                        stroke="#FF7D61" stroke-width="2" />
-                                </g>
-                            </svg>
-                            <h3>Great Work!</h3>
-                        </div>
-                        <p class="posuere">Ultrices sed sed ut posuere at. Risus urna augue orci malesuada etiam diam
-                            enim. Parturient habitasse massa feugiat posuere odio leo vitae feugiat. Scelerisque cras
-                            viverra nunc ipsum et duis dui proin a. Urna rhoncus nullam odio sed vitae.
-                        </p>
-                        <svg class="slider-line" xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 0 630 33"
-                            fill="none">
-                            <path d="M630 1H100L70 31V1H0" stroke="#909090" />
-                        </svg>
-                        <div class="client_details">
-                            <img class="testimonial_client_img" src="{% static 'myapp/assets/images/testimonial_client_img3.jpg' %}"
-                                alt="testimonial_client_img3">
-                            <div>
-                                <h3 class="client-name">Andrew Lewis</h3>
-                                <p class="studio">Oria Studio</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="great-work-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30"
-                                fill="none">
-                                <g>
-                                    <path
-                                        d="M11.9903 8.97047L11.9834 8.98364L11.977 8.997C10.9357 11.1534 10.3315 13.3985 10.1705 15.7265L10.1087 16.6197L10.9897 16.7794L16.4359 17.7668V29H1V20.6818C1 15.4562 2.21666 11.3738 4.55213 8.33851C6.85551 5.3666 9.89607 3.01035 13.7015 1.27904L15.1132 3.79798C14.0057 5.37106 12.9651 7.09582 11.9903 8.97047ZM34.5544 8.97047L34.5475 8.98364L34.5411 8.997C33.4998 11.1534 32.8956 13.3985 32.7346 15.7265L32.6728 16.6197L33.5538 16.7794L39 17.7668V29H23.5641V20.6818C23.5641 15.4561 24.7808 11.3737 27.1163 8.33843C29.4197 5.36656 32.4602 3.01033 36.2656 1.27904L37.6773 3.79798C36.5698 5.37106 35.5292 7.09583 34.5544 8.97047Z"
-                                        stroke="#FF7D61" stroke-width="2" />
-                                </g>
-                            </svg>
-                            <h3>Best Creative Agency!</h3>
-                        </div>
-                        <p class="posuere">Lectus quis sit diam aenean. Neque sed blandit sed at. Adipiscing eu aenean
-                            viverra nunc. Lacus ornare massa scelerisque feugiat pretium diam massa purus. Ultrices
-                            elementum mattis magna cras viverra nisl enim.
-                        </p>
-                        <svg class="slider-line" xmlns="http://www.w3.org/2000/svg" height="33" viewBox="0 0 630 33"
-                            fill="none">
-                            <path d="M630 1H100L70 31V1H0" stroke="#909090" />
-                        </svg>
-                        <div class="client_details">
-                            <img class="testimonial_client_img" src="{% static 'myapp/assets/images/testimonial_client_img4.jpg' %}"
-                                alt="testimonial_client_img4">
-                            <div>
-                                <h3 class="client-name">Mark Daly</h3>
-                                <p class="studio">Square Agency</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                </div>
-            </section>
-            <!-- ======================================= Section Six End ================================== -->
+            
             <!-- ======================================= Section Seven ================================== -->
             <section class="section-seven overflow-hidden">
                 <div class="container">
@@ -1286,10 +635,9 @@
                             </div>
                             <p class="date-dev">October 30, 2024 _ AI Tools</p>
                             <h2 class="need-blog"
-                                onclick="window.location.href='single_blog.html';">Just
-                                Thinkng Can make a Beautiful Art, How?</h2>
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:share:7257285209019047936/','_blank');">Just Thinking Can Make Beautiful Art. How?</h2>
                             <p class="explore-me read-more-btn">
-                                <a href="blog.html">READ MORE
+                                <a href="https://www.linkedin.com/feed/update/urn:li:share:7257285209019047936/" target="_blank" rel="noopener">READ MORE
                                     <svg class="expo-arrow"
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="32" height="32"
@@ -1328,11 +676,11 @@
                             </div>
                             <p class="date-dev">October 27, 2024 _ Social</p>
                             <h2 class="need-blog"
-                                onclick="window.location.href='single_blog.html';">A
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:share:7256536617450913792/','_blank');">A
                                 Simple Social Task
                                 Checklist</h2>
                             <p class="explore-me read-more-btn">
-                                <a href="/###">READ MORE
+                                <a href="https://www.linkedin.com/feed/update/urn:li:share:7256536617450913792/" target="_blank" rel="noopener">READ MORE
                                     <svg class="expo-arrow"
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="32" height="32"
@@ -1371,10 +719,10 @@
                             </div>
                             <p class="date-dev">June 7, 2024 _ DEVELOPMENT</p>
                             <h2 class="need-blog"
-                                onclick="window.location.href='single_blog.html';">How
-                                to Talk with AI: Prompt Enginner</h2>
+                                onclick="window.open('https://www.linkedin.com/feed/update/urn:li:ugcPost:7204868244208308224/','_blank');">How
+                                to Talk with AI: Prompt Engineering</h2>
                             <p class="explore-me read-more-btn">
-                                <a href="/###">READ MORE
+                                <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7204868244208308224/" target="_blank" rel="noopener">READ MORE
                                     <svg class="expo-arrow"
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="32" height="32"
@@ -1467,13 +815,10 @@
                         <div class="hekl">
                             <div class="row">
                                 <div class="col-xxl-5 col-xl-5 col-lg-5">
-                                    <a href="index.html"><img
+                                    <a href="/"><img
                                             src="{% static 'myapp/assets/images/logo_svg.svg' %}"
                                             alt="logo"></a>
-                                    <p class="work_well">When do they work well,
-                                        and when do they on us and finally,
-                                        when do we actually need how can we
-                                        avoid them.</p>
+                                    <p class="work_well">AI Engineer building AI agents, RAG systems and LLM-powered products that run in production, with the backend, evals and cloud setup around them.</p>
                                     <div class="contact-footer">
                                         <img
                                             src="{% static 'myapp/assets/images/phone_svg.svg' %}"
@@ -1492,7 +837,7 @@
                                         <img
                                             src="{% static 'myapp/assets/images/location_svg.svg' %}"
                                             alt="location_svg">
-                                        <p>Gujarat, India</p>
+                                        <p>Surat, Gujarat, India</p>
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3">
@@ -1501,13 +846,13 @@
                                         <a href="/about">About</a>
                                     </div>
                                     <div class="contact-footer">
-                                        <a href="services.html">Services</a>
+                                        <a href="/#services">Services</a>
                                     </div>
                                     <div class="contact-footer">
-                                        <a href="/##">Portfolio</a>
+                                        <a href="/#latest-projects">Portfolio</a>
                                     </div>
                                     <div class="contact-footer">
-                                        <a href="/###">Blog</a>
+                                        <a href="/blog">Blog</a>
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-lg-4">
@@ -1516,11 +861,10 @@
                                         <a href="/contact">Contact</a>
                                     </div>
                                     <div class="contact-footer">
-                                        <a href="index.html#">Privacy Policy</a>
+                                        <a href="https://www.linkedin.com/in/rahul-agarwal-00044a191/" target="_blank" rel="noopener">LinkedIn</a>
                                     </div>
                                     <div class="contact-footer">
-                                        <a href="index.html#">Terms &
-                                            Conditions</a>
+                                        <a href="{% static 'myapp/assets/pdf/Rahul_Agarwal_AI_Engineer_Resume.pdf' %}" target="_blank" rel="noopener">Download Resume</a>
                                     </div>
                                 </div>
                             </div>

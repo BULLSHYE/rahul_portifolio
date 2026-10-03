@@ -1,0 +1,301 @@
+/* Additions on top of the original theme (style.css) for the AI-engineer content. */
+
+/* Client names inside the "trusted by" pills (replaces stock brand logos) */
+.marquee-img-main .brand-name {
+    display: block;
+    white-space: nowrap;
+    padding: 0 28px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .01em;
+}
+
+/* Project cards: summary + tech tags under the title */
+.effect-milo .project-summary {
+    margin: 10px 0 0;
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .62);
+}
+.effect-milo .project-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0 0;
+    padding: 0;
+}
+.effect-milo .project-tags li {
+    font-size: 13px;
+    line-height: 1;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 219, 89, .35);
+    color: #FFDB59;
+}
+
+/* Filtered tabs: two-column grid */
+.project-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+@media (max-width: 767px) {
+    .project-grid-2 { grid-template-columns: 1fr; }
+    .marquee-img-main .brand-name { font-size: 16px; padding: 0 18px; }
+}
+
+/* Expertise circles: allow two-line labels */
+.skills-box-main .counter p {
+    padding: 0 18px;
+    text-align: center;
+}
+
+/* Title spacing moves below the new summary + tags */
+.effect-milo .tab-product-design { padding-bottom: 0; }
+.effect-milo .project-tags { margin-bottom: 90px; }
+.project-grid-2 .effect-milo .project-tags { margin-bottom: 50px; }
+@media (max-width: 767px) {
+    .effect-milo .project-tags { margin-bottom: 50px; }
+}
+
+/* Footer: "Have a project in your mind?" box sat 80px off the container edge,
+   leaving an empty dark strip; stretch the background and align the box. */
+.footer-bg {
+    background-size: cover;
+    background-position: center;
+}
+.desktop-itemright-footer {
+    flex: 0 0 380px;
+    max-width: 380px;
+}
+.desktop-itemright-footer .footer-box-right {
+    margin-right: 0;
+    border-radius: 24px 24px 0 0;
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-bottom: 0;
+}
+
+/* ---------- About: Skills & Toolbox horizontal slider ---------- */
+.toolbox-section { padding: 110px 0 100px; }
+.toolbox-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.toolbox-lead { max-width: 560px; margin: 0; }
+.toolbox-nav { display: flex; align-items: center; gap: 14px; }
+.toolbox-count { color: #909090; font-size: 18px; margin-right: 8px; }
+.toolbox-count b { color: #fff; font-weight: 500; }
+.toolbox-arrow {
+    width: 56px; height: 56px; border-radius: 50%;
+    border: 1px solid #FFDB59; background: transparent; color: #FFDB59;
+    font-size: 22px; line-height: 1; cursor: pointer;
+    transition: background .25s, color .25s;
+}
+.toolbox-arrow:hover { background: #FFDB59; color: #0F141C; }
+
+.toolbox-track {
+    --edge: max(16px, calc((100vw - 1320px) / 2 + 12px));
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--edge);
+    padding: 6px var(--edge) 30px;
+    scrollbar-width: none;
+    cursor: grab;
+}
+.toolbox-track::-webkit-scrollbar { display: none; }
+.toolbox-card {
+    flex: 0 0 380px;
+    scroll-snap-align: start;
+    position: relative;
+    min-height: 360px;
+    padding: 36px 32px;
+    border-radius: 24px;
+    background: #171B22;
+    border: 1px solid rgba(255, 255, 255, .06);
+    overflow: hidden;
+    transition: transform .3s, border-color .3s;
+}
+.toolbox-card:hover { transform: translateY(-6px); border-color: rgba(255, 219, 89, .4); }
+.toolbox-num {
+    position: absolute; top: 18px; right: 26px;
+    font-size: 64px; font-weight: 700; line-height: 1;
+    color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .14);
+}
+.toolbox-card h3 {
+    font-size: 26px; font-weight: 500; line-height: 34px;
+    margin: 0 70px 24px 0;
+    background: linear-gradient(90deg, #FF7D61 0%, #FFDB59 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.toolbox-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.toolbox-card li {
+    font-size: 14px; line-height: 1; color: #fff;
+    padding: 9px 13px; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: rgba(255, 255, 255, .03);
+}
+.toolbox-progress { height: 3px; background: rgba(255, 255, 255, .08); border-radius: 3px; margin-top: 10px; overflow: hidden; }
+.toolbox-progress span {
+    display: block; height: 100%; width: 8%;
+    background: linear-gradient(90deg, #FF7D61 0%, #FFDB59 100%);
+    transition: width .2s;
+}
+@media (max-width: 767px) {
+    .toolbox-section { padding: 70px 0 60px; }
+    .toolbox-card { flex-basis: 82vw; min-height: 0; padding: 28px 24px; }
+    .toolbox-card h3 { font-size: 22px; }
+    .toolbox-arrow { width: 46px; height: 46px; font-size: 18px; }
+}
+
+/* ---------- Project cards: consistent media, branded covers, live badge ---------- */
+.effect-milo .tab-imgs {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: #171B22;
+}
+.effect-milo .project-cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 36px;
+    overflow: hidden;
+    background:
+        radial-gradient(120% 90% at 100% 0%, rgba(255, 125, 97, .35), transparent 55%),
+        radial-gradient(90% 80% at 0% 100%, rgba(255, 219, 89, .18), transparent 60%),
+        linear-gradient(160deg, #1d222c 0%, #12161e 100%);
+}
+.effect-milo .project-cover::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+}
+.effect-milo .project-cover.cover-vision { background-color: #12161e; background-image:
+        radial-gradient(120% 90% at 100% 0%, rgba(108, 60, 245, .45), transparent 55%),
+        radial-gradient(90% 80% at 0% 100%, rgba(255, 125, 97, .15), transparent 60%),
+        linear-gradient(160deg, #1d222c 0%, #12161e 100%); }
+.effect-milo .project-cover.cover-iot { background-image:
+        radial-gradient(120% 90% at 100% 0%, rgba(94, 242, 181, .28), transparent 55%),
+        linear-gradient(160deg, #1d222c 0%, #12161e 100%); }
+.effect-milo .project-cover.cover-automation { background-image:
+        radial-gradient(120% 90% at 100% 0%, rgba(255, 219, 89, .32), transparent 55%),
+        linear-gradient(160deg, #1d222c 0%, #12161e 100%); }
+.cover-kicker, .cover-title, .cover-stack { position: relative; }
+.cover-kicker {
+    align-self: flex-start;
+    font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+    color: #FFDB59; padding: 7px 12px; border-radius: 999px;
+    border: 1px solid rgba(255, 219, 89, .35);
+}
+.cover-title { font-size: 34px; font-weight: 600; line-height: 1.15; color: #fff; max-width: 90%; }
+.cover-stack { font-size: 15px; color: rgba(255, 255, 255, .55); }
+
+.live-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #0F141C;
+    background: linear-gradient(90deg, #FF7D61 0%, #FFDB59 100%);
+    vertical-align: middle;
+}
+.project-card-link:hover .tab-product-design { color: #FFDB59; }
+
+/* Hero "clients" bubbles: initials instead of stock faces */
+.client-initial {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0F141C;
+    background: linear-gradient(135deg, #FF7D61 0%, #FFDB59 100%);
+    border: 2px solid #171B22;
+}
+.client-initial.client-img2 { background: linear-gradient(135deg, #6B3CF5 0%, #A98BFF 100%); color: #fff; }
+.client-initial.client-img3 { background: linear-gradient(135deg, #2bd4a4 0%, #9af2d4 100%); }
+.client-initial.client-img4 { background: #fff; }
+
+@media (max-width: 767px) {
+    .project-cover { padding: 24px; }
+    .cover-title { font-size: 24px; }
+}
+.effect-milo .project-cover.cover-product { background-image:
+        radial-gradient(120% 90% at 100% 0%, rgba(255, 125, 97, .3), transparent 55%),
+        linear-gradient(160deg, #1d222c 0%, #12161e 100%); }
+
+/* ---------- Projects: aligned 2-column grid (replaces staggered columns) ---------- */
+.tab-pane .project-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 48px;
+    row-gap: 72px;
+    align-items: stretch;
+}
+.project-grid-2 > .tab1sub { margin: 0; height: 100%; }
+.project-grid-2 .project-card-link { display: block; height: 100%; }
+.project-grid-2 .effect-milo { display: flex; flex-direction: column; height: 100%; }
+.project-grid-2 .effect-milo .project-tags { margin-bottom: 0; }
+
+/* media frame clips the hover zoom; no fade-out */
+.project-media {
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+.project-media .tab-imgs { border: 0; border-radius: 0; display: block; }
+.effect-milo .project-media img,
+.effect-milo .project-media .project-cover { transition: transform .5s ease; }
+.effect-milo:hover .project-media img,
+.effect-milo:hover .project-media .project-cover { opacity: 1; transform: scale(1.04); }
+.effect-milo:hover .tab-imgs { border-radius: 0; }
+
+.projects-cta { margin-top: 64px; }
+
+@media (max-width: 767px) {
+    .tab-pane .project-grid-2 { grid-template-columns: 1fr; row-gap: 48px; }
+    .projects-cta { margin-top: 40px; }
+}
+
+.effect-milo .project-media .project-cover { display: flex; }
+.project-grid-2 .tab-content-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Mobile: filter tabs scroll sideways instead of running off-screen */
+@media (max-width: 991px) {
+    .tab-header .tab-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        max-width: 100%;
+        gap: 18px;
+        padding-bottom: 6px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+    .tab-header .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-header .tab-bar .tab-button { flex: 0 0 auto; white-space: nowrap; }
+}

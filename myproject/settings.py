@@ -116,9 +116,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myapp/static'),
-]
+# myApp/static is already collected by the app-directories finder;
+# listing it here too made collectstatic report every file as a duplicate.
+STATICFILES_DIRS = []
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
